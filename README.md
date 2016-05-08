@@ -1,4 +1,4 @@
 # cite_test_ttl
 
 
-A suite of test data in TTL for testsing implementations of CITE services.
+A suite of test data for testsing implementations of CITE services.
