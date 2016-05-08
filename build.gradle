@@ -21,25 +21,30 @@ if (hasProperty('pub')) {
     }
 }
 
-
+group = "io.github.cite-architecture"
 version = "1.0.0"
 
 configurations {
-    testsuite
+    archive
 }
 
 task pkg(type: Zip)  {
-    /*classifier = 'schemas'*/
     description = 'Builds zip file of test suite.'
     from(file("testsuite"))
     include("**/*")
     baseName = "cite_test_suite"
 }
 
-uploadTestsuite {
+artifacts {
+    archive pkg
+}
+
+uploadArchive {
     repositories.mavenDeployer {
         repository(url: nexusRepo) {
             authentication (userName: nexusUser, password: nexusPassword)
         }
+
+
     }
 }
