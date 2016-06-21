@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="CitationConfiguration.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="schemas/cts/CitationConfiguration.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <!-- On-line configuration for inventory in testinventory2.xml -->
 <CitationConfiguration xmlns="http://chs.harvard.edu/xmlns/hocuspocus">
     <online
@@ -93,6 +93,22 @@
                         xpath="/tei:w[@n='?']"/>
                 </citation>
             </citation>
+        </citationMapping>
+    </online>
+    
+    <online urn="urn:cts:hmtDemo:goethe.erlkoenig.deu:" type="xml"
+        docname="erlkoenig-deu.xml">       
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+         <citationMapping>
+            <citation label="Stanza" scope="/tei:TEI/tei:text/tei:body/tei:div" xpath="/tei:l[@n='?']"/>
+        </citationMapping>
+    </online>
+    
+    <online urn="urn:cts:hmtDemo:goethe.erlkoenig.eng:" type="xml"
+        docname="erlkoenig-eng.xml">
+        <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+        <citationMapping>
+            <citation label="Stanza" scope="/tei:TEI/tei:text/tei:body/tei:div" xpath="/tei:l[@n='?']"/>
         </citationMapping>
     </online>
     

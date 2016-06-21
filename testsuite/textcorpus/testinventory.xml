@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="TextInventory.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TextInventory
-  tiid="hmt"
-  tiversion="5.0.rc.1"
-  xmlns="http://chs.harvard.edu/xmlns/cts"
+<?xml-model href="schemas/cts/TextInventory.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TextInventory tiid="hmt" tiversion="5.0.rc.1" xmlns="http://chs.harvard.edu/xmlns/cts"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <ctsnamespace
-    abbr="greekLit"
-    ns="http://chs.harvard.edu/ctsns/greekLit">
-    <description
-      xml:lang="eng"> The &quot;First Thousand Years of Greek&quot; project's inventory of Greek
-      texts. </description>
+  <ctsnamespace abbr="greekLit" ns="http://chs.harvard.edu/ctsns/greekLit">
+    <description xml:lang="eng"> The &quot;First Thousand Years of Greek&quot; project's inventory
+      of Greek texts. </description>
   </ctsnamespace>
-  
-  
-  <ctsnamespace
-    abbr="test1"
-    ns="http://dev/null">
-    <description
-      xml:lang="eng"> Namespace for made up test works.</description>
+
+
+  <ctsnamespace abbr="hmtDemo" ns="http://chs.harvard.edu/ctsns/hmtDemo">
+    <description xml:lang="eng"> Namespace for demonstration texts. </description>
   </ctsnamespace>
-  
-  
- <textgroup urn="urn:cts:greekLit:tlg0012:">
-   <groupname xml:lang="eng">Homeric Epic</groupname>
-   <work urn="urn:cts:greekLit:tlg0012.tlg001:" xml:lang="grc">
-     <title xml:lang="eng">Iliad</title>
-     <edition urn="urn:cts:greekLit:tlg0012.tlg001.testAllen:">
-       <label xml:lang="eng">Allen's Iliad (test ed.)</label>
-       <description xml:lang="eng">Allen. Iliad. Greek. 3 books of 10 lines.</description>
-       <online/>
-       <exemplar urn="urn:cts:greekLit:tlg0012.tlg001.testAllen.wt:">
-         <label xml:lang="eng">Allen. Iliad. Greek. 3 books of 10 lines. Word-tokens wrapped and citable.</label>
-       </exemplar>
-     </edition>
-   </work>
- </textgroup>
-  
+
+
+  <textgroup urn="urn:cts:greekLit:tlg0012:">
+    <groupname xml:lang="eng">Homeric Epic</groupname>
+    <work urn="urn:cts:greekLit:tlg0012.tlg001:" xml:lang="grc">
+      <title xml:lang="eng">Iliad</title>
+      <edition urn="urn:cts:greekLit:tlg0012.tlg001.testAllen:">
+        <label xml:lang="eng">Allen's Iliad (test ed.)</label>
+        <description xml:lang="eng">Allen. Iliad. Greek. 3 books of 10 lines.</description>
+        <online/>
+        <exemplar urn="urn:cts:greekLit:tlg0012.tlg001.testAllen.wt:">
+          <label xml:lang="eng">Allen. Iliad. Greek. 3 books of 10 lines. Word-tokens wrapped and citable.</label>
+        </exemplar>
+      </edition>
+    </work>
+  </textgroup>
+
   <textgroup urn="urn:cts:greekLit:tlg0016:">
     <groupname xml:lang="eng">Herodotus</groupname>
     <work urn="urn:cts:greekLit:tlg0016.tlg001:" xml:lang="grc">
@@ -47,28 +38,49 @@
         <online/>
         <exemplar urn="urn:cts:greekLit:tlg0016.tlg001.grcTest.wt:">
           <label xml:lang="eng">Greek. Tokenized. For testing</label>
-          <description xml:lang="eng">Greek. 3 books, 10 sections each. Words wrapped and citahle.</description>
+          <description xml:lang="eng">Greek. 3 books, 10 sections each. Words wrapped and
+            citahle.</description>
           <online/>
-          
         </exemplar>
       </edition>
-    
-      
+
+
       <translation urn="urn:cts:greekLit:tlg0016.tlg001.engTest:" xml:lang="eng">
         <label xml:lang="eng">Hdt. English for Testing</label>
         <description xml:lang="eng">3 books. 10 sections. For testing.</description>
         <online/>
         <exemplar urn="urn:cts:greekLit:tlg0016.tlg001.engTest.wt:">
           <label xml:lang="eng">Greek. Tokenized. For testing</label>
-          <description xml:lang="eng">Greek. 3 books, 10 sections each. Words wrapped and citable.</description>
+          <description xml:lang="eng">Greek. 3 books, 10 sections each. Words wrapped and
+            citable.</description>
           <online/>
-          
         </exemplar>
       </translation>
-     
-     
+
+
     </work>
   </textgroup>
-  
- 
+  <textgroup urn="urn:cts:hmtDemo:goethe:">
+    <groupname xml:lang="eng">Johann Wolfgang von Goethe</groupname>
+     <work urn="urn:cts:hmtDemo:goethe.erlkoenig:" xml:lang="deu">
+      <title xml:lang="eng">Der Erlkönig</title>
+
+      <edition urn="urn:cts:hmtDemo:goethe.erlkoenig.deu:">
+        <label xml:lang="eng">German (1782)</label>
+        <description xml:lang="eng">Used for the CTS Workshop. Digital Humanities, Krakow,
+          2016.</description>
+        <online/>
+      </edition>
+
+      <translation urn="urn:cts:hmtDemo:goethe.erlkoenig.eng:" xml:lang="eng">
+        <label xml:lang="eng">English. Edgar A. Bowring, trans. (1853)</label>
+        <description xml:lang="eng">Used for the CTS Workshop. Digital Humanities, Krakow,
+          2016.</description>
+        <online/>
+      </translation>
+
+
+    </work>
+  </textgroup>
+
 </TextInventory>
