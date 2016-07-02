@@ -17,14 +17,9 @@
             <attribute
                 name="type"><value>ctsurn</value></attribute>
             <optional>
-                <attribute
-                    name="join">
-                    <choice>
-                        <value>naturaljoin</value>
-                    </choice>
-                </attribute>
+                <attribute name="universalValue"></attribute>
             </optional>
-            <optional>
+        <optional>
                 <element
                     name="cite:indexRelation">
                     <attribute
@@ -47,12 +42,7 @@
             <attribute
                 name="type"><value>citeurn</value></attribute>
             <optional>
-                <attribute
-                    name="join">
-                    <choice>
-                        <value>naturaljoin</value>
-                    </choice>
-                </attribute>
+                <attribute name="universalValue"></attribute>
             </optional>
             <optional>
                 <element
@@ -78,6 +68,9 @@
                 <ref
                     name="citedatachoice"/>
             </attribute>
+            <optional>
+                <attribute name="universalValue"></attribute>
+            </optional>
             <optional>
                 <element
                     name="cite:valueList">
@@ -190,7 +183,7 @@
                 <element
                     name="cite:extendedBy">
                     <attribute
-                        name="abbr"/>
+                        name="extension"/>
                 </element>
             </zeroOrMore>
             
