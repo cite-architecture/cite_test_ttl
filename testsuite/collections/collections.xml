@@ -10,7 +10,7 @@
 
 
     <!-- IMAGE DATA FROM HMT Collections ********************   -->
-    <!--<citeCollection canonicalId="Image" label="Caption" urn="urn:cite:hmt:vaimg">
+    <citeCollection canonicalId="Image" label="Caption" urn="urn:cite:hmt:vaimg">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <extendedBy extension="cite:CiteImage"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Images of the Venetus A MS</dc:title>
@@ -29,7 +29,7 @@
         <citeProperty name="Label" label="Caption" type="string"/>
         <citeProperty name="Rights" label="Rights" type="string"> </citeProperty>
 
-    </citeCollection>-->
+    </citeCollection>
 
 <!-- Page ROIs for Venetus A (has UniversalValue property, some indexed properties) -->
     <!-- PageZone,Folio,ImageRoI,"Label" -->
@@ -56,6 +56,36 @@
         <citeProperty name="Codex" label="Codex" type="citeurn" universalValue="urn:cite:hmt:codices.msA"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"></citeProperty>
     </citeCollection>
+    
+    <!-- Aristarchan Critical Signs on the Venetus A-->
+    <!-- OccurrrenceUrn	Sequence	CriticalSign	TextPassage -->
+    <citeCollection canonicalId="OccurrenceUrn" label="CriticalSign" urn="urn:cite:hmt:venAsign">
+        <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
+        
+        <dc:title xmlns="http://purl.org/dc/elements/1.1/">Aristarchan Critical Signs on the Venetus A </dc:title>
+        <creator xmlns="http://purl.org/dc/elements/1.1/">Christopher Blackwell</creator>
+        <creator xmlns="http://purl.org/dc/elements/1.1/">Neel Smith</creator>
+        <coverage xmlns="http://purl.org/dc/elements/1.1/">All images from the Homer Multitext
+            project's photography of the Venetus A manuscript.</coverage>
+        <description xmlns="http://purl.org/dc/elements/1.1/"> Photography of the Venetus A
+            manuscript by the Homer Multitext project.</description>
+        <rights xmlns="http://purl.org/dc/elements/1.1/"> All data in this collection are available
+            under the terms of the Creative Commons Attribution-Non-Commercial 3.0 Unported License,
+            http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
+        
+        <orderedBy property="Sequence"/>
+        <source type="file" value="venAsigns.tsv"/>
+       
+        <citeProperty name="OccurrenceUrn" label="The URN for this occurrence of a critical sign" type="citeurn"></citeProperty>
+        <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
+        <citeProperty name="CriticalSign" label="A URN identifying the kind of critical sign" type="citeurn"></citeProperty>
+        <citeProperty name="TextPassage" label="The Iliadic passage that the sign marks." type="ctsurn">
+            <indexRelation rdfverb="hmt:commentsOn" inverseverb="hmt:commentedOnBy"/>
+        </citeProperty>
+        
+        
+    </citeCollection>
+    
     
 
 </collectionService>
