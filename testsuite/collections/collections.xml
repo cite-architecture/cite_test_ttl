@@ -4,8 +4,6 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.0">
     <extensions>
         <extension abbr="cite:CiteImage" uri="http://chs.harvard.edu/cite/chsimg"/>
-
-
     </extensions>
 
 
@@ -46,7 +44,7 @@
         <rights xmlns="http://purl.org/dc/elements/1.1/"> All data in this collection are available
             under the terms of the Creative Commons Attribution-Non-Commercial 3.0 Unported License,
             http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
-        <source type="file" value="pageRois.csv"/>
+        <source type="file" value="pageRois-abbrev.csv"/>
         
         <citeProperty name="PageZone" label="A region of interest on an image" type="citeurn"></citeProperty>
         <citeProperty name="Folio" label="MS Folio" type="citeurn"></citeProperty>
@@ -56,6 +54,10 @@
         <citeProperty name="Codex" label="Codex" type="citeurn" universalValue="urn:cite:hmt:codices.msA"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"></citeProperty>
     </citeCollection>
+    
+    
+    
+    
     
     <!-- Aristarchan Critical Signs on the Venetus A-->
     <!-- OccurrrenceUrn	Sequence	CriticalSign	TextPassage -->
@@ -68,7 +70,7 @@
         <coverage xmlns="http://purl.org/dc/elements/1.1/">All images from the Homer Multitext
             project's photography of the Venetus A manuscript.</coverage>
         <description xmlns="http://purl.org/dc/elements/1.1/"> Photography of the Venetus A
-            manuscript by the Homer Multitext project.</description>
+            manuscript by the Homer Multitext project. Includes 'v1' and 'v2' versions of each object, for testing CITE Collections.</description>
         <rights xmlns="http://purl.org/dc/elements/1.1/"> All data in this collection are available
             under the terms of the Creative Commons Attribution-Non-Commercial 3.0 Unported License,
             http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
