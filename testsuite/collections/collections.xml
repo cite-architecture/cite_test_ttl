@@ -8,7 +8,7 @@
 
 
     <!-- IMAGE DATA FROM HMT Collections ********************   -->
-    <citeCollection canonicalId="Image" label="Caption" urn="urn:cite:hmt:vaimg">
+    <citeCollection canonicalId="Image" label="Label" urn="urn:cite:hmt:vaimg">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <extendedBy extension="cite:CiteImage"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Images of the Venetus A MS</dc:title>
@@ -32,7 +32,7 @@
 <!-- Page ROIs for Venetus A (has UniversalValue property, some indexed properties) -->
     <!-- PageZone,Folio,ImageRoI,"Label" -->
     
-    <citeCollection canonicalId="PageZone" label="Image Regions of Interest for Manuscript Pages" urn="urn:cite:hmt:pageroi">
+    <citeCollection canonicalId="PageZone" label="Label" urn="urn:cite:hmt:pageroi">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">ImageROIs for folios of the Venetus A MS</dc:title>
         <creator xmlns="http://purl.org/dc/elements/1.1/">Christopher Blackwell</creator>
@@ -49,7 +49,7 @@
         <citeProperty name="PageZone" label="A region of interest on an image" type="citeurn"></citeProperty>
         <citeProperty name="Folio" label="MS Folio" type="citeurn"></citeProperty>
         <citeProperty name="ImageRoI" label="Image ROI" type="citeurn">
-            <indexRelation rdfverb="hmt:illustrates" inverseverb="hmt:illustratedBy"/>
+            <indexRelation rdfAbbr="hmt:illustrates" rdfFull="http://www.homermultitext.org/datans/illustrates" inverseAbbr="hmt:illustratedBy" inverseFull="http://www.homermultitext.org/datans/illustratedBy"/>
         </citeProperty>
         <citeProperty name="Codex" label="Codex" type="citeurn" universalValue="urn:cite:hmt:codices.msA"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"></citeProperty>
@@ -79,10 +79,11 @@
         <source type="file" value="venAsigns.tsv"/>
        
         <citeProperty name="OccurrenceUrn" label="The URN for this occurrence of a critical sign" type="citeurn"></citeProperty>
+        <citeProperty name="Label" label="Label" type="string"/>
         <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
         <citeProperty name="CriticalSign" label="A URN identifying the kind of critical sign" type="citeurn"></citeProperty>
         <citeProperty name="TextPassage" label="The Iliadic passage that the sign marks." type="ctsurn">
-            <indexRelation rdfverb="hmt:commentsOn" inverseverb="hmt:commentedOnBy"/>
+            <indexRelation rdfAbbr="hmt:commentsOn" rdfFull="http://www.homermultitext.org/datans/commentsOn" inverseAbbr="hmt:commentedOnBy" inverseFull="http://www.homermultitext.org/datanscommentedOnBy"/>
         </citeProperty>
         
         
@@ -111,6 +112,7 @@
         <citeProperty name="Siglum" label="Manuscript Siglum" type="string"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"/>
         <citeProperty name="CodexURN" label="Codex" type="citeurn"/>
+        <citeProperty name="RV" label="Recto or Verso" type="string"></citeProperty>
         
         
     </citeCollection>
