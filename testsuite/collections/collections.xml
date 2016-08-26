@@ -57,7 +57,7 @@
     
     <!-- Aristarchan Critical Signs on the Venetus A-->
     <!-- OccurrrenceUrn	Sequence	CriticalSign	TextPassage -->
-    <citeCollection canonicalId="OccurrenceUrn" label="CriticalSign" urn="urn:cite:hmt:venAsign">
+    <citeCollection canonicalId="OccurrenceUrn" label="Label" urn="urn:cite:hmt:venAsign">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Aristarchan Critical Signs on the Venetus A </dc:title>
