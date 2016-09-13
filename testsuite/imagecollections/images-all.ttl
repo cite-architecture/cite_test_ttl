@@ -6,7 +6,7 @@
 @prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix olo:     <http://purl.org/ontology/olo/core#> .
 @prefix dse:  <http://www.homermultitext.org/dse/rdf/> .
-@prefix hmt:  <http://www.homermultitext.org/datans/> .
+@prefix hmt:  <http://www.homermultitext.org/hmt/rdf/> .
 <http://chs.harvard.edu/cite/chsimg> rdf:type cite:CiteExtension .
 <http://chs.harvard.edu/cite/chsimg> cite:abbreviatedBy cite:CiteImage .
 <urn:cite:hmt:vaimg> rdfs:label " Photography of the Venetus A manuscript by the Homer Multitext project." . 
