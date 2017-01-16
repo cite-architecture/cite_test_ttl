@@ -8,7 +8,7 @@
 
 
     <!-- IMAGE DATA FROM HMT Collections ********************   -->
-    <citeCollection canonicalId="Image" label="Label" urn="urn:cite:hmt:vaimg">
+    <citeCollection canonicalId="Image" label="Label" urn="urn:cite2:hmt:vaimg:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <extendedBy extension="cite:CiteImage"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Images of the Venetus A MS</dc:title>
@@ -21,7 +21,7 @@
             http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
         <source type="file" value="vaimgs.csv"/>
 
-        <citeProperty name="Image" label="Image URN" type="citeurn"/>
+        <citeProperty name="Image" label="Image URN" type="cite2urn"/>
         <citeProperty name="Label" label="Caption" type="string"/>
         <citeProperty name="Rights" label="Rights" type="string"> </citeProperty>
 
@@ -30,7 +30,7 @@
 <!-- Page ROIs for Venetus A (has UniversalValue property, some indexed properties) -->
     <!-- PageZone,Folio,ImageRoI,"Label" -->
     
-    <citeCollection canonicalId="PageZone" label="Label" urn="urn:cite:hmt:pageroi">
+    <citeCollection canonicalId="PageZone" label="Label" urn="urn:cite2:hmt:pageroi:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">ImageROIs for folios of the Venetus A MS</dc:title>
         <creator xmlns="http://purl.org/dc/elements/1.1/">Christopher Blackwell</creator>
@@ -42,12 +42,12 @@
             http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
         <source type="file" value="pageRois-abbrev.csv"/>
         
-        <citeProperty name="PageZone" label="A region of interest on an image" type="citeurn"></citeProperty>
-        <citeProperty name="Folio" label="MS Folio" type="citeurn"></citeProperty>
-        <citeProperty name="ImageRoI" label="Image ROI" type="citeurn">
+        <citeProperty name="PageZone" label="A region of interest on an image" type="cite2urn"></citeProperty>
+        <citeProperty name="Folio" label="MS Folio" type="cite2urn"></citeProperty>
+        <citeProperty name="ImageRoI" label="Image ROI" type="cite2urn">
             <indexRelation rdfAbbr="hmt:illustrates" rdfFull="http://www.homermultitext.org/datans/illustrates" inverseAbbr="hmt:illustratedBy" inverseFull="http://www.homermultitext.org/datans/illustratedBy"/>
         </citeProperty>
-        <citeProperty name="Codex" label="Codex" type="citeurn" universalValue="urn:cite:hmt:codices.msA"></citeProperty>
+        <citeProperty name="Codex" label="Codex" type="cite2urn" universalValue="urn:cite:hmt:codices.msA"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"></citeProperty>
     </citeCollection>
     
@@ -57,7 +57,7 @@
     
     <!-- Aristarchan Critical Signs on the Venetus A-->
     <!-- OccurrrenceUrn	Sequence	CriticalSign	TextPassage -->
-    <citeCollection canonicalId="OccurrenceUrn" label="Label" urn="urn:cite:hmt:venAsign">
+    <citeCollection canonicalId="OccurrenceUrn" label="Label" urn="urn:cite2:hmt:venAsign:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Aristarchan Critical Signs on the Venetus A </dc:title>
@@ -72,10 +72,10 @@
         <orderedBy property="Sequence"/>
         <source type="file" value="venAsigns.tsv"/>
        
-        <citeProperty name="OccurrenceUrn" label="The URN for this occurrence of a critical sign" type="citeurn"></citeProperty>
+        <citeProperty name="OccurrenceUrn" label="The URN for this occurrence of a critical sign" type="cite2urn"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"/>
         <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
-        <citeProperty name="CriticalSign" label="A URN identifying the kind of critical sign" type="citeurn"></citeProperty>
+        <citeProperty name="CriticalSign" label="A URN identifying the kind of critical sign" type="cite2urn"></citeProperty>
         <citeProperty name="TextPassage" label="The Iliadic passage that the sign marks." type="ctsurn">
             <indexRelation rdfAbbr="hmt:commentsOn" rdfFull="http://www.homermultitext.org/datans/commentsOn" inverseAbbr="hmt:commentedOnBy" inverseFull="http://www.homermultitext.org/datanscommentedOnBy"/>
         </citeProperty>
@@ -86,7 +86,7 @@
     <!-- Folios of the Venetus A. Partial collection for testing versioned collections. -->
     <!-- Ten folio sides, in two versions with different sequencing -->
     <!-- Siglum	Sequence	URN	RV	Label	CodexURN -->
-    <citeCollection canonicalId="URN" label="Label" urn="urn:cite:hmt:msA">
+    <citeCollection canonicalId="URN" label="Label" urn="urn:cite2:hmt:msA:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Folios of the Venetus A Manuscript</dc:title>
@@ -101,11 +101,11 @@
         <orderedBy property="Sequence"/>
         <source type="file" value="venetusA-v1.tsv"/>
         
-        <citeProperty name="URN" label="The URN for this folio" type="citeurn"></citeProperty>
+        <citeProperty name="URN" label="The URN for this folio" type="cite2urn"></citeProperty>
         <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
         <citeProperty name="Siglum" label="Manuscript Siglum" type="string"></citeProperty>
         <citeProperty name="Label" label="Label" type="string"/>
-        <citeProperty name="CodexURN" label="Codex" type="citeurn"/>
+        <citeProperty name="CodexURN" label="Codex" type="cite2urn"/>
         <citeProperty name="RV" label="Recto or Verso" type="string"></citeProperty>
         
         
@@ -123,10 +123,10 @@
         <orderedBy property="Sequence"/>
         <source type="file" value="clauses.csv"/>
         
-        <citeProperty name="URN" label="The URN for this association of text with analysis" type="citeurn"></citeProperty>
+        <citeProperty name="URN" label="The URN for this association of text with analysis" type="cite2urn"></citeProperty>
         <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
         <citeProperty name="AnalyzedText" label="The URN to the passage of text analyzed" type="ctsurn"></citeProperty>
-        <citeProperty name="AnalysisDataUrn" label="The URN pointing to the analysis of this text" type="citeurn"></citeProperty>
+        <citeProperty name="AnalysisDataUrn" label="The URN pointing to the analysis of this text" type="cite2urn"></citeProperty>
         <citeProperty name="TextDeformation" label="A presentational string resulting from applying this analysis to this passage of text" type="string"></citeProperty>
         
     </citeCollection>-->
