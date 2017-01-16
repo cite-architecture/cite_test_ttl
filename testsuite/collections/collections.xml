@@ -111,6 +111,28 @@
         
     </citeCollection>
     
+    <!-- Template for an ORCA Collection -->
+    <!--<citeCollection canonicalId="URN" label="TextDeformation" urn="urn:cite:hmt:clauseAnalysis">
+        <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
+        <extendedBy extension="cite:ORCA"/>
+        <description xmlns="http://purl.org/dc/elements/1.1/">Iliad, Perseus ed., analyzed by grammatical clauses</description>
+        <rights xmlns="http://purl.org/dc/elements/1.1/"> All data in this collection are available
+            under the terms of the Creative Commons Attribution-Non-Commercial 3.0 Unported License,
+            http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
+        
+        <orderedBy property="Sequence"/>
+        <source type="file" value="clauses.csv"/>
+        
+        <citeProperty name="URN" label="The URN for this association of text with analysis" type="citeurn"></citeProperty>
+        <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
+        <citeProperty name="AnalyzedText" label="The URN to the passage of text analyzed" type="ctsurn"></citeProperty>
+        <citeProperty name="AnalysisDataUrn" label="The URN pointing to the analysis of this text" type="citeurn"></citeProperty>
+        <citeProperty name="TextDeformation" label="A presentational string resulting from applying this analysis to this passage of text" type="string"></citeProperty>
+        
+    </citeCollection>-->
+    
+
+    
    
     
     

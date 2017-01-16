@@ -39,7 +39,7 @@
         <exemplar urn="urn:cts:greekLit:tlg0016.tlg001.grcTest.wt:">
           <label xml:lang="eng">Greek. Tokenized. For testing</label>
           <description xml:lang="eng">Greek. 3 books, 10 sections each. Words wrapped and
-            citahle.</description>
+            citable.</description>
           <online/>
         </exemplar>
       </edition>
