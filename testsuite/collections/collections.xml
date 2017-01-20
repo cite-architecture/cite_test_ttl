@@ -8,7 +8,7 @@
 
 
     <!-- IMAGE DATA FROM HMT Collections ********************   -->
-    <citeCollection canonicalId="Image" label="Label" urn="urn:cite2:hmt:vaimg:">
+    <citeCollection canonicalId="Image" label="Label" urn="urn:cite2:hmt:vaimg.v1:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <extendedBy extension="cite:CiteImage"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Images of the Venetus A MS</dc:title>
@@ -30,7 +30,7 @@
 <!-- Page ROIs for Venetus A (has UniversalValue property, some indexed properties) -->
     <!-- PageZone,Folio,ImageRoI,"Label" -->
     
-    <citeCollection canonicalId="PageZone" label="Label" urn="urn:cite2:hmt:pageroi:">
+    <citeCollection canonicalId="PageZone" label="Label" urn="urn:cite2:hmt:pageroi.v1:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">ImageROIs for folios of the Venetus A MS</dc:title>
         <creator xmlns="http://purl.org/dc/elements/1.1/">Christopher Blackwell</creator>
@@ -51,13 +51,34 @@
         <citeProperty name="Label" label="Label" type="string"></citeProperty>
     </citeCollection>
     
+    <citeCollection canonicalId="PageZone" label="Label" urn="urn:cite2:hmt:pageroi.v2:">
+        <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
+        <dc:title xmlns="http://purl.org/dc/elements/1.1/">ImageROIs for folios of the Venetus A MS</dc:title>
+        <creator xmlns="http://purl.org/dc/elements/1.1/">Christopher Blackwell</creator>
+        <creator xmlns="http://purl.org/dc/elements/1.1/">Neel Smith</creator>
+        <coverage xmlns="http://purl.org/dc/elements/1.1/">All images from the Homer Multitext project's photography of the Venetus A manuscript.</coverage>
+        <description xmlns="http://purl.org/dc/elements/1.1/"> Photography of the Venetus A manuscript by the Homer Multitext project.</description>
+        <rights xmlns="http://purl.org/dc/elements/1.1/"> All data in this collection are available
+            under the terms of the Creative Commons Attribution-Non-Commercial 3.0 Unported License,
+            http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
+        <source type="file" value="pageRois-abbrev2.csv"/>
+        
+        <citeProperty name="PageZone" label="A region of interest on an image" type="cite2urn"></citeProperty>
+        <citeProperty name="Folio" label="MS Folio" type="cite2urn"></citeProperty>
+        <citeProperty name="ImageRoI" label="Image ROI" type="cite2urn">
+            <indexRelation rdfAbbr="hmt:illustrates" rdfFull="http://www.homermultitext.org/datans/illustrates" inverseAbbr="hmt:illustratedBy" inverseFull="http://www.homermultitext.org/datans/illustratedBy"/>
+        </citeProperty>
+        <citeProperty name="Codex" label="Codex" type="cite2urn" universalValue="urn:cite:hmt:codices.msA"></citeProperty>
+        <citeProperty name="Label" label="Label" type="string"></citeProperty>
+    </citeCollection>
+    
     
     
     
     
     <!-- Aristarchan Critical Signs on the Venetus A-->
     <!-- OccurrrenceUrn	Sequence	CriticalSign	TextPassage -->
-    <citeCollection canonicalId="OccurrenceUrn" label="Label" urn="urn:cite2:hmt:venAsign:">
+    <citeCollection canonicalId="OccurrenceUrn" label="Label" urn="urn:cite2:hmt:venAsign.v1:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Aristarchan Critical Signs on the Venetus A </dc:title>
@@ -86,7 +107,7 @@
     <!-- Folios of the Venetus A. Partial collection for testing versioned collections. -->
     <!-- Ten folio sides, in two versions with different sequencing -->
     <!-- Siglum	Sequence	URN	RV	Label	CodexURN -->
-    <citeCollection canonicalId="URN" label="Label" urn="urn:cite2:hmt:msA:">
+    <citeCollection canonicalId="URN" label="Label" urn="urn:cite2:hmt:msA.v1:">
         <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
         
         <dc:title xmlns="http://purl.org/dc/elements/1.1/">Folios of the Venetus A Manuscript</dc:title>
@@ -100,6 +121,31 @@
         
         <orderedBy property="Sequence"/>
         <source type="file" value="venetusA-v1.tsv"/>
+        
+        <citeProperty name="URN" label="The URN for this folio" type="cite2urn"></citeProperty>
+        <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
+        <citeProperty name="Siglum" label="Manuscript Siglum" type="string"></citeProperty>
+        <citeProperty name="Label" label="Label" type="string"/>
+        <citeProperty name="CodexURN" label="Codex" type="cite2urn"/>
+        <citeProperty name="RV" label="Recto or Verso" type="string"></citeProperty>
+        
+        
+    </citeCollection>
+    
+    <citeCollection canonicalId="URN" label="Label" urn="urn:cite2:hmt:msA.v2:">
+        <namespaceMapping abbr="hmt" uri="http://www.homermultitext.org/datans"/>
+        
+        <dc:title xmlns="http://purl.org/dc/elements/1.1/">Folios of the Venetus A Manuscript</dc:title>
+        <creator xmlns="http://purl.org/dc/elements/1.1/">Christopher Blackwell</creator>
+        <creator xmlns="http://purl.org/dc/elements/1.1/">Neel Smith</creator>
+        
+        <description xmlns="http://purl.org/dc/elements/1.1/">Folios of the Venetus A manuscript.</description>
+        <rights xmlns="http://purl.org/dc/elements/1.1/"> All data in this collection are available
+            under the terms of the Creative Commons Attribution-Non-Commercial 3.0 Unported License,
+            http://creativecommons.org/licenses/by-nc/3.0/deed.en_US</rights>
+        
+        <orderedBy property="Sequence"/>
+        <source type="file" value="venetusA-v2-a.tsv"/>
         
         <citeProperty name="URN" label="The URN for this folio" type="cite2urn"></citeProperty>
         <citeProperty name="Sequence" label="Sequence" type="number"></citeProperty>
